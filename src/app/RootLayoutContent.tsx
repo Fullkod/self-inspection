@@ -6,6 +6,7 @@ import { PasswordChangeGuard } from "@/components/PasswordChangeGuard";
 import { ScrollToTopWrapper } from "@/components/ScrollToTopWrapper";
 import { FriendlyErrorToast } from "@/components/common/FriendlyErrorToast";
 import { AppChrome } from "@/components/layout/AppChrome";
+import { SiteCredit } from "@/components/layout/FullkodCredit";
 import { useAccent } from "@/contexts/AccentContext";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useAuthStore } from "@/store";
@@ -92,7 +93,10 @@ export function RootLayoutContent({
                   contenido. Solo se aplica si hay usuario (la tabbar solo se
                   monta logueado) para no dejar un hueco bajo el footer del
                   landing en móvil. */}
-              <main className={hasUser ? "pb-20 sm:pb-0" : ""}>{children}</main>
+              <main className={`relative ${hasUser ? "pb-20 sm:pb-0" : ""}`}>
+                {children}
+                <SiteCredit />
+              </main>
             </ScrollToTopWrapper>
           </KeyboardFocusWrapper>
         </BackButtonHandler>
