@@ -498,8 +498,19 @@ export default function Home() {
             </p>
           </div>
           <div className="mx-auto my-8 h-px w-full max-w-[420px] bg-white/10" />
-          <div className="text-center text-xs text-[#8C837E]">
-            © 2026 Safe 360 · 360 Ingeco · Todos los derechos reservados
+          <div className="flex flex-col items-center gap-2 text-center text-xs text-[#8C837E]">
+            <span>© 2026 Safe 360 · 360 Ingeco · Todos los derechos reservados</span>
+            <a
+              href="https://fullkod.com/?ref=self-inspection"
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-1.5 hover:text-[#E8DFD9]"
+            >
+              Desarrollado por
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/brand/fullkod-symbol-reversed.svg" alt="" className="h-3.5 w-3.5" />
+              <span className="font-semibold text-[#E8DFD9]">Fullkod</span>
+            </a>
           </div>
         </div>
       </footer>
