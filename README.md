@@ -97,4 +97,4 @@ El build de Next produce un sitio estático en `out/` que puede servirse desde c
 
 ## Licencia
 
-MIT — ver [LICENSE](LICENSE).
+Software propietario. Todos los derechos reservados por Fullkod — ver [LICENSE](LICENSE).
